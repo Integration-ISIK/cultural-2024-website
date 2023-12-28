@@ -90,8 +90,8 @@
         }
 
         .event img {
-            max-width: 50%;
-            height: 50%;
+            max-width: 30%;
+            height: 30%;
             border-radius: 10px;
         }
 
