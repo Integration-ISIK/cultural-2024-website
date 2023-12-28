@@ -33,7 +33,7 @@
             position: absolute;
             left: 1em;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(-90%);
         }
 
         header h1 {
@@ -93,7 +93,7 @@
 
 <body>
     <header>
-        <img src="your-logo.png" alt="Logo">
+        <img src="cultural.png" alt="Logo">
         <h1>Cultural Events</h1>
     </header>
 
