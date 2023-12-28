@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultural Events</title>
+    <title>Integration 2024, Cultural Chapter</title>
     <style>
         /* Reset some default styles */
         body, h1, h2, p {
