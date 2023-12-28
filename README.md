@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,7 +20,7 @@
         }
 
         header {
-            background-color: #2c3e50;
+            background: linear-gradient(45deg, #3498db, #e74c3c);
             color: #ecf0f1;
             text-align: center;
             padding: 2em 0;
@@ -33,6 +34,8 @@
             left: 1em;
             top: 50%;
             transform: translateY(-50%);
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
         }
 
         header h1 {
@@ -40,10 +43,11 @@
             margin-top: 0.5em;
             margin-left: 120px; /* Adjust the margin as needed */
             display: inline-block;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
-        
+
         nav {
-            background-color: #34495e;
+            background: linear-gradient(45deg, #34495e, #3498db);
             padding: 1em 0;
             text-align: center;
         }
@@ -55,10 +59,14 @@
             margin: 0 1em;
             font-size: 1.2em;
             transition: color 0.3s ease-in-out;
+            border-radius: 10px;
+            background: linear-gradient(45deg, #e74c3c, #f39c12);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         nav a:hover {
             color: #3498db;
+            transform: scale(1.05);
         }
 
         main {
@@ -69,8 +77,8 @@
             border: 1px solid #bdc3c7;
             margin-bottom: 1.5em;
             padding: 1.5em;
-            background-color: #ecf0f1;
-            border-radius: 5px;
+            background: linear-gradient(45deg, #ecf0f1, #3498db);
+            border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
 
@@ -78,16 +86,18 @@
             color: #2c3e50;
             font-size: 1.8em;
             margin-bottom: 0.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
 
         footer {
-            background-color: #2c3e50;
+            background: linear-gradient(45deg, #3498db, #e74c3c);
             color: #ecf0f1;
             text-align: center;
             padding: 1.5em 0;
             position: fixed;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
