@@ -167,6 +167,7 @@
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
          </div>
+         <img src="thru.jpg" alt="Thru Da Lens Poster">
         </div>
 
         <div class="event">
