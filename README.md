@@ -76,7 +76,7 @@
 
 <body>
     <header>
-        <img src="your-logo.png" alt="Logo">
+        <img src="cultural.png">
         <h1>Cultural Events</h1>
     </header>
 
