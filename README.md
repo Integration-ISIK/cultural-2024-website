@@ -28,9 +28,9 @@
         }
 
         header img {
-            max-width: 30px; /* Adjust the max-width as needed */
-            height: auto;
-            position: absolute;
+            max-width: 10px; /* Adjust the max-width as needed */
+            height: 10px;
+            position: left;
             left: 1em;
             top: 50%;
             transform: translateY(-50%);
