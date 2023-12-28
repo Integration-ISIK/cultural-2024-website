@@ -23,12 +23,12 @@
         }
 
         header img {
-            max-width: 100px; /* Adjust the size as needed for passport size */
+            max-width: 80px; /* Adjust the size as needed for passport size */
             height: auto;
             position: absolute;
             left: 1em;
             top: 50%;
-            transform: translateY(-30%);
+            transform: translateY(-50%);
         }
 
         nav {
