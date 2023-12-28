@@ -125,8 +125,9 @@
             <h2>Alaap</h2>
             <p><strong>Date:</strong> February 03-04, 2024</p>
             <p><strong>Location:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
-            <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-                euismod mauris. Vestibulum nec justo et turpis aliquam luctus.</p>
+            <p><strong>Poster:</strong> Coming Soon.</p>
+            <p><strong>Instructions:</strong> Coming Soon.</p>
+            <p><strong>Registration Form:</strong> Coming Soon.</p>
         </div>
 
         <div class="event">
