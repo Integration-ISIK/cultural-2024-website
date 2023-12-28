@@ -106,9 +106,9 @@
 
     <main>
         <div class="event">
-            <h2>Event Title 1</h2>
-            <p>Date: January 1, 2024</p>
-            <p>Location: City, Country</p>
+            <h2>Alaap</h2>
+            <p>Date: February 03-04, 2024</p>
+            <p>Location: PJAB auditorium, Indian Statistical Institute, Kolkata</p>
             <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
