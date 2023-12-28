@@ -139,7 +139,7 @@
             <div class="event-details">
                 <h2>Alaap</h2>
                 <p><strong>Date:</strong> February 03-04, 2024</p>
-                <p><strong>Location:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
+                <p><strong>Venue:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
                 <p><strong>Poster:</strong> Coming Soon.</p>
                 <p><strong>Instructions:</strong> Coming Soon.</p>
                 <p><strong>Registration Form:</strong> Coming Soon.</p>
@@ -151,7 +151,7 @@
             <div class="event-details">
                 <h2>Nikkana Jhankar</h2>
                 <p><strong>Date:</strong> February 10, 2024</p>
-                <p><strong>Location:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
+                <p><strong>Venue:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
                 <p><strong>Poster:</strong> Coming Soon.</p>
                 <p><strong>Instructions:</strong> Coming Soon.</p>
                 <p><strong>Registration Form:</strong> Coming Soon.</p>
@@ -174,7 +174,7 @@
         <div class="event-details">
             <h2>Band-e-thlon</h2>
             <p><strong>Date:</strong>Coming Soon</p>
-            <p><strong>Location:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
+            <p><strong>Venue:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
@@ -185,7 +185,7 @@
         <div class="event-details">
             <h2>Cypher</h2>
             <p><strong>Date:</strong> February 03-04, 2024</p>
-            <p><strong>Location:</strong> ERU Seminar Room, Indian Statistical Institute, Kolkata (Tentatively)</p>
+            <p><strong>Venue:</strong> ERU Seminar Room, Indian Statistical Institute, Kolkata (Tentatively)</p>
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
@@ -196,7 +196,7 @@
         <div class="event-details">
             <h2>MUN</h2>
             <p><strong>Date:</strong>Coming Soon</p>
-            <p><strong>Location:</strong>Indian Statistical Institute, Kolkata</p>
+            <p><strong>Venue:</strong>Indian Statistical Institute, Kolkata</p>
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
@@ -207,7 +207,7 @@
         <div class="event-details">
             <h2>Prahelika</h2>
             <p><strong>Date:</strong> January 27-28, 2024</p>
-            <p><strong>Location:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
+            <p><strong>Venue:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
