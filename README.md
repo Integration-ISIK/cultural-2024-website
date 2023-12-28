@@ -1,66 +1,92 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultural Events</title>
     <style>
-        /* Add your custom styles here */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
+            color: #333;
         }
 
         header {
             background-color: #333;
             color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
             padding: 1em;
             text-align: center;
         }
 
-        section {
-            margin: 20px;
-        }
-
-        footer {
-            background-color: #333;
+        nav a {
             color: #fff;
+            text-decoration: none;
             padding: 1em;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin: 0 1em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #57a0d3;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        .event {
+            border: 1px solid #ddd;
+            margin-bottom: 1em;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Cultural Events</h1>
-        <p>Discover and participate in cultural events near you!</p>
     </header>
 
-    <section>
-        <h2>Upcoming Events</h2>
-        <!-- Add your event listings here -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
         <div class="event">
-            <h3>Event Title 1</h3>
-            <p>Date: January 1, 2023</p>
+            <h2>Event Title 1</h2>
+            <p>Date: January 1, 2024</p>
             <p>Location: City, Country</p>
             <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
         <div class="event">
-            <h3>Event Title 2</h3>
-            <p>Date: February 15, 2023</p>
+            <h2>Event Title 2</h2>
+            <p>Date: February 15, 2024</p>
             <p>Location: Another City, Country</p>
             <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <!-- Add more events as needed -->
-    </section>
 
-    <footer>
-        <p>&copy; 2023 Cultural Events. All rights reserved.</p>
-    </footer>
+        <!-- Add more events as needed -->
+
+    </main>
 </body>
+
 </html>
