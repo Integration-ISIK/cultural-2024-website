@@ -133,7 +133,7 @@
     </main>
 
     <footer>
-        &copy; 2023 Your Website Name. All rights reserved.
+        &copy; 2023 Cultural Chapter, Integration' 24. All rights reserved.
     </footer>
 </body>
 
