@@ -28,12 +28,12 @@
         }
 
         header img {
-            max-width: 60px;
+            max-width: 100px; /* Adjust the max-width as needed */
             height: auto;
             position: absolute;
             left: 1em;
             top: 50%;
-            transform: translateY(-90%);
+            transform: translateY(-50%);
         }
 
         header h1 {
