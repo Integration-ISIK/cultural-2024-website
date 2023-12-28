@@ -108,8 +108,7 @@
     </header>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Events</a>
+        <a href="/">Events</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
     </nav>
