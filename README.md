@@ -173,7 +173,7 @@
         <div class="event">
         <div class="event-details">
             <h2>Band-e-thlon</h2>
-            <p><strong>Date:</strong>Coming Soon</p>
+            <p><strong>Date:</strong> Coming Soon</p>
             <p><strong>Venue:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
@@ -197,7 +197,7 @@
         <div class="event">
         <div class="event-details">
             <h2>MUN</h2>
-            <p><strong>Date:</strong>Coming Soon</p>
+            <p><strong>Date:</strong> Coming Soon</p>
             <p><strong>Venue:</strong> Indian Statistical Institute, Kolkata</p>
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
