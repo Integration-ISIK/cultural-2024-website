@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,7 +41,7 @@
         header h1 {
             font-size: 2.5em;
             margin-top: 0.5em;
-            margin-left: 120px; /* Adjust the margin as needed */
+            margin-left: 120px;
             display: inline-block;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
@@ -88,6 +89,13 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
 
+        .event p {
+            margin: 0.5em 0;
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
         footer {
             background: linear-gradient(45deg, #3498db, #e74c3c);
             color: #ecf0f1;
@@ -103,7 +111,7 @@
 
 <body>
     <header>
-        <img src="cultural.jpg">
+        <img src="cultural.jpg" alt="Cultural Chapter Logo">
         <h1>Integration 2024, Cultural Chapter</h1>
     </header>
 
@@ -116,16 +124,18 @@
     <main>
         <div class="event">
             <h2>Alaap</h2>
-            <p>Date: February 03-04, 2024</p>
-            <p>Location: PJAB auditorium, Indian Statistical Institute, Kolkata</p>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p><strong>Date:</strong> February 03-04, 2024</p>
+            <p><strong>Location:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
+            <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+                euismod mauris. Vestibulum nec justo et turpis aliquam luctus.</p>
         </div>
 
         <div class="event">
             <h2>Event Title 2</h2>
-            <p>Date: February 15, 2024</p>
-            <p>Location: Another City, Country</p>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p><strong>Date:</strong> February 15, 2024</p>
+            <p><            <strong>Location:</strong> Another City, Country</p>
+            <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+                euismod mauris. Vestibulum nec justo et turpis aliquam luctus.</p>
         </div>
 
         <!-- Add more events as needed -->
@@ -133,7 +143,7 @@
     </main>
 
     <footer>
-        &copy; 2023 Cultural Chapter, Integration' 24. All rights reserved.
+        &copy; 2023 Cultural Chapter, Integration '24. All rights reserved.
     </footer>
 </body>
 
