@@ -195,7 +195,7 @@
         <div class="event-details">
             <h2>MUN</h2>
             <p><strong>Date:</strong>Coming Soon</p>
-            <p><strong>Venue:</strong>Indian Statistical Institute, Kolkata</p>
+            <p><strong>Venue:</strong> Indian Statistical Institute, Kolkata</p>
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
