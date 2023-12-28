@@ -19,12 +19,16 @@
             color: #fff;
             text-align: center;
             padding: 1em;
+            position: relative;
         }
 
         header img {
-            max-width: 100%;
+            max-width: 80px; /* Adjust the size as needed for passport size */
             height: auto;
-            margin-bottom: 1em;
+            position: absolute;
+            left: 1em;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
         nav {
@@ -76,7 +80,7 @@
 
 <body>
     <header>
-        <img src="cultural.png">
+        <img src="your-logo.png" alt="Logo">
         <h1>Cultural Events</h1>
     </header>
 
