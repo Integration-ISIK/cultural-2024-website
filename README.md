@@ -93,7 +93,7 @@
 
 <body>
     <header>
-        <img src="cultural.png" alt="Logo">
+        <img src="cultural.jpg" alt="Logo">
         <h1>Cultural Events</h1>
     </header>
 
