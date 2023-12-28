@@ -191,6 +191,7 @@
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
             </div>
+            <img src="cypher.jpg" alt="Cypher Poster">
         </div>
 
         <div class="event">
