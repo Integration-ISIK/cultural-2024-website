@@ -179,7 +179,7 @@
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
             </div>
-            <img src="band.jpg" alt="Band-e-thlon Poster">
+            <img src="rock.jpg" alt="Band-e-thlon Poster">
         </div>
 
         <div class="event">
