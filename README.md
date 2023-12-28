@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -79,6 +80,19 @@
             background: linear-gradient(45deg, #ecf0f1, #3498db);
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .event-details {
+            flex: 1;
+            margin-right: 1em;
+        }
+
+        .event img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
 
         h2 {
@@ -122,21 +136,27 @@
 
     <main>
         <div class="event">
-            <h2>Alaap</h2>
-            <p><strong>Date:</strong> February 03-04, 2024</p>
-            <p><strong>Location:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
-            <p><strong>Poster:</strong> Coming Soon.</p>
-            <p><strong>Instructions:</strong> Coming Soon.</p>
-            <p><strong>Registration Form:</strong> Coming Soon.</p>
+            <div class="event-details">
+                <h2>Alaap</h2>
+                <p><strong>Date:</strong> February 03-04, 2024</p>
+                <p><strong>Location:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
+                <p><strong>Poster:</strong> Coming Soon.</p>
+                <p><strong>Instructions:</strong> Coming Soon.</p>
+                <p><strong>Registration Form:</strong> Coming Soon.</p>
+            </div>
+            <img src="alaap.jpg" alt="Alaap Poster">
         </div>
 
         <div class="event">
-            <h2>Nikkana Jhankar</h2>
-            <p><strong>Date:</strong> February 10, 2024</p>
-            <p><strong>Location:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
-            <p><strong>Poster:</strong> Coming Soon.</p>
-            <p><strong>Instructions:</strong> Coming Soon.</p>
-            <p><strong>Registration Form:</strong> Coming Soon.</p>
+            <div class="event-details">
+                <h2>Nikkana Jhankar</h2>
+                <p><strong>Date:</strong> February 10, 2024</p>
+                <p><strong>Location:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
+                <p><strong>Poster:</strong> Coming Soon.</p>
+                <p><strong>Instructions:</strong> Coming Soon.</p>
+                <p><strong>Registration Form:</strong> Coming Soon.</p>
+            </div>
+            <img src="nikkana-jhankar.jpg" alt="Nikkana Jhankar Poster">
         </div>
 
         <div class="event">
