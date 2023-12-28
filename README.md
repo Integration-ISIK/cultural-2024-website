@@ -90,8 +90,8 @@
         }
 
         .event img {
-            max-width: 100%;
-            height: auto;
+            max-width: 50%;
+            height: 50%;
             border-radius: 10px;
         }
 
@@ -160,48 +160,58 @@
         </div>
 
         <div class="event">
+            <div class="event-details">
             <h2>Thru Da Lens</h2>
             <p><strong>Date:</strong> Coming Soon</p>
             <p><strong>Exhibition Venue:</strong> NAB2, Indian Statistical Institute, Kolkata</p>
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
+         </div>
         </div>
 
         <div class="event">
+        <div class="event-details">
             <h2>Band-e-thlon</h2>
             <p><strong>Date:</strong>Coming Soon</p>
             <p><strong>Location:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
+            </div>
         </div>
 
         <div class="event">
+        <div class="event-details">
             <h2>Cypher</h2>
             <p><strong>Date:</strong> February 03-04, 2024</p>
             <p><strong>Location:</strong> ERU Seminar Room, Indian Statistical Institute, Kolkata (Tentatively)</p>
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
+            </div>
         </div>
 
         <div class="event">
+        <div class="event-details">
             <h2>MUN</h2>
             <p><strong>Date:</strong>Coming Soon</p>
             <p><strong>Location:</strong>Indian Statistical Institute, Kolkata</p>
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
+            </div>
         </div>
 
         <div class="event">
+        <div class="event-details">
             <h2>Prahelika</h2>
             <p><strong>Date:</strong> January 27-28, 2024</p>
             <p><strong>Location:</strong> PJAB auditorium, Indian Statistical Institute, Kolkata</p>
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
+            </div>
         </div>
 
     </main>
