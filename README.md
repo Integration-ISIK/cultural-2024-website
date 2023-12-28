@@ -28,7 +28,7 @@
         }
 
         header img {
-            max-width: 100px; /* Adjust the max-width as needed */
+            max-width: 30px; /* Adjust the max-width as needed */
             height: auto;
             position: absolute;
             left: 1em;
@@ -93,7 +93,7 @@
 
 <body>
     <header>
-        <img src="cultural.jpg" alt="Logo">
+        <img src="cultural.jpg">
         <h1>Cultural Events</h1>
     </header>
 
