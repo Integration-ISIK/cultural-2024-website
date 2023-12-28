@@ -28,8 +28,8 @@
         }
 
         header img {
-            max-width: 10px; /* Adjust the max-width as needed */
-            height: 10px;
+            max-width: 20px; /* Adjust the max-width as needed */
+            height: 20px;
             position: left;
             left: 1em;
             top: 50%;
