@@ -133,9 +133,10 @@
         <div class="event">
             <h2>Event Title 2</h2>
             <p><strong>Date:</strong> February 15, 2024</p>
-            <p><            <strong>Location:</strong> Another City, Country</p>
-            <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-                euismod mauris. Vestibulum nec justo et turpis aliquam luctus.</p>
+            <p><strong>Location:</strong> Another City, Country</p>
+            <p><strong>Poster:</strong> Coming Soon.</p>
+            <p><strong>Instructions:</strong> Coming Soon.</p>
+            <p><strong>Registration Form:</strong> Coming Soon.</p>
         </div>
 
         <!-- Add more events as needed -->
