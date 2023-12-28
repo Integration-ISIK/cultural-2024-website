@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -105,7 +104,7 @@
 <body>
     <header>
         <img src="cultural.jpg">
-        <h1>Cultural Events</h1>
+        <h1>Integration 2024, Cultural Chapter</h1>
     </header>
 
     <nav>
