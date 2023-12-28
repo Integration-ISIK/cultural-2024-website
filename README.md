@@ -27,9 +27,9 @@
         }
 
         header img {
-            max-width: 70px; /* Adjust the max-width as needed */
-            height: 70px;
-            position: left;
+            max-width: 80px;
+            height: 80px;
+            position: absolute;
             left: 1em;
             top: 50%;
             transform: translateY(-50%);
@@ -38,8 +38,10 @@
         header h1 {
             font-size: 2.5em;
             margin-top: 0.5em;
+            margin-left: 120px; /* Adjust the margin as needed */
+            display: inline-block;
         }
-
+        
         nav {
             background-color: #34495e;
             padding: 1em 0;
