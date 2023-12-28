@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultural Events</title>
     <style>
+        /* Your styles go here */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -18,6 +19,12 @@
             color: #fff;
             text-align: center;
             padding: 1em;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1em;
         }
 
         nav {
@@ -54,11 +61,22 @@
         h2 {
             color: #333;
         }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
     <header>
+        <img src="your-logo.png" alt="Logo">
         <h1>Cultural Events</h1>
     </header>
 
@@ -87,6 +105,10 @@
         <!-- Add more events as needed -->
 
     </main>
+
+    <footer>
+        &copy; 2023 Your Website Name. All rights reserved.
+    </footer>
 </body>
 
 </html>
