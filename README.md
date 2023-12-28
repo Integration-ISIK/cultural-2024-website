@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultural Events</title>
+    <title>Cultural Chapter</title>
     <style>
         /* Your styles go here */
         body {
@@ -23,12 +23,12 @@
         }
 
         header img {
-            max-width: 80px; /* Adjust the size as needed for passport size */
+            max-width: 100px; /* Adjust the size as needed for passport size */
             height: auto;
             position: absolute;
             left: 1em;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(-30%);
         }
 
         nav {
@@ -80,7 +80,7 @@
 
 <body>
     <header>
-        <img src="your-logo.png" alt="Logo">
+        <img src="cultural.png" alt="Logo">
         <h1>Cultural Events</h1>
     </header>
 
