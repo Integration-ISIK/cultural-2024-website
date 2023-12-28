@@ -1,29 +1,34 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultural Chapter</title>
+    <title>Cultural Events</title>
     <style>
-        /* Your styles go here */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* Reset some default styles */
+        body, h1, h2, p {
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #2c3e50;
+            color: #ecf0f1;
             text-align: center;
-            padding: 1em;
+            padding: 2em 0;
             position: relative;
         }
 
         header img {
-            max-width: 80px; /* Adjust the size as needed for passport size */
+            max-width: 60px;
             height: auto;
             position: absolute;
             left: 1em;
@@ -31,22 +36,28 @@
             transform: translateY(-50%);
         }
 
+        header h1 {
+            font-size: 2.5em;
+            margin-top: 0.5em;
+        }
+
         nav {
-            background-color: #444;
-            padding: 1em;
+            background-color: #34495e;
+            padding: 1em 0;
             text-align: center;
         }
 
         nav a {
-            color: #fff;
+            color: #ecf0f1;
             text-decoration: none;
             padding: 1em;
             margin: 0 1em;
+            font-size: 1.2em;
             transition: color 0.3s ease-in-out;
         }
 
         nav a:hover {
-            color: #57a0d3;
+            color: #3498db;
         }
 
         main {
@@ -54,23 +65,25 @@
         }
 
         .event {
-            border: 1px solid #ddd;
-            margin-bottom: 1em;
-            padding: 1em;
-            background-color: #fff;
+            border: 1px solid #bdc3c7;
+            margin-bottom: 1.5em;
+            padding: 1.5em;
+            background-color: #ecf0f1;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            color: #333;
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #2c3e50;
+            color: #ecf0f1;
             text-align: center;
-            padding: 1em;
+            padding: 1.5em 0;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -80,7 +93,7 @@
 
 <body>
     <header>
-        <img src="image.png" alt="Logo">
+        <img src="your-logo.png" alt="Logo">
         <h1>Cultural Events</h1>
     </header>
 
