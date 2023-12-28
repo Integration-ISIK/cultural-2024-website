@@ -202,7 +202,7 @@
             <p><strong>Poster:</strong> Coming Soon.</p>
             <p><strong>Instructions:</strong> Coming Soon.</p>
             <p><strong>Registration Form:</strong> Coming Soon.</p>
-            <img src="mun.jpg" alt="MUN Poster">
+            <img src="munp.jpg" alt="MUN Poster">
             </div>
         </div>
 
