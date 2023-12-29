@@ -14,14 +14,14 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #D7D4D3   ;
-            color: #333;
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            color: #fff;
             line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(45deg, #3498db, #e74c3c);
-            color: #ecf0f1;
+            background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+            color: #fff;
             text-align: center;
             padding: 2em 0;
             position: relative;
@@ -47,25 +47,25 @@
         }
 
         nav {
-            background: linear-gradient(45deg, #34495e, #3498db);
+            background: linear-gradient(45deg, #5c258d, #4389a2);
             padding: 1em 0;
             text-align: center;
         }
 
         nav a {
-            color: #ecf0f1;
+            color: #fff;
             text-decoration: none;
             padding: 1em;
             margin: 0 1em;
             font-size: 1.2em;
             transition: color 0.3s ease-in-out;
             border-radius: 10px;
-            background: linear-gradient(45deg, #e74c3c, #f39c12);
+            background: linear-gradient(45deg, #fd1d1d, #fcb045);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         nav a:hover {
-            color: #3498db;
+            color: #4389a2;
             transform: scale(1.05);
         }
 
@@ -74,14 +74,15 @@
         }
 
         .event {
-            border: 1px solid #bdc3c7;
+            border: 1px solid #fff;
             margin-bottom: 1.5em;
             padding: 1.5em;
-            background: linear-gradient(45deg, #ecf0f1, #3498db);
+            background: linear-gradient(45deg, #4389a2, #82b74b);
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
             display: flex;
             justify-content: space-between;
+            overflow: hidden;
         }
 
         .event-details {
@@ -93,10 +94,11 @@
             max-width: 30%;
             height: 30%;
             border-radius: 10px;
+            object-fit: cover;
         }
 
         h2 {
-            color: #2c3e50;
+            color: #fff;
             font-size: 1.8em;
             margin-bottom: 0.5em;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -104,14 +106,14 @@
 
         .event p {
             margin: 0.5em 0;
-            color: #333;
+            color: #fff;
             font-size: 1.1em;
             line-height: 1.5;
         }
 
         footer {
-            background: linear-gradient(45deg, #3498db, #e74c3c);
-            color: #ecf0f1;
+            background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+            color: #fff;
             text-align: center;
             padding: 1.5em 0;
             position: fixed;
