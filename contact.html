@@ -14,13 +14,13 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f8f8;
+            background: #f8f9fa;
             color: #333;
             line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(45deg, #3498db, #e74c3c);
+            background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6);
             color: #ecf0f1;
             text-align: center;
             padding: 2em 0;
@@ -47,7 +47,7 @@
         }
 
         nav {
-            background: linear-gradient(45deg, #34495e, #3498db);
+            background: linear-gradient(45deg, #2c3e50, #3498db);
             padding: 1em 0;
             text-align: center;
         }
@@ -58,69 +58,69 @@
             padding: 1em;
             margin: 0 1em;
             font-size: 1.2em;
-            transition: color 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
             border-radius: 10px;
             background: linear-gradient(45deg, #e74c3c, #f39c12);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
 
         nav a:hover {
-            color: #3498db;
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
 
         main {
+            background: #ecf0f1;
             padding: 2em;
             text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
 
         .joint-secretaries {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 1em;
-    }
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1em;
+        }
 
-    .secretary-details {
-        text-align: center;
-    }
+        .secretary-details {
+            text-align: center;
+        }
 
-    .secretary-details img {
-        width: 50px; /* Adjust the max-width as needed */
-        height: 50px;
-        margin-right: 0.5em;
-    }
+        .secretary-details img {
+            width: 50px;
+            height: 50px;
+            margin-right: 0.5em;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
 
         .contact-person {
             margin-bottom: 2em;
         }
 
         .contact-person img {
-    width: 120px; /* Adjust the max-width as needed */
-    height: 120px;
-    margin-right: 1em; 
-}
-
+            width: 120px;
+            height: 120px;
+            margin-right: 1em;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
 
         .event {
             border: 1px solid #bdc3c7;
+            background: linear-gradient(45deg, #ecf0f1, #3498db, #2ecc71);
             margin-bottom: 2em;
             padding: 1.5em;
-            background: linear-gradient(45deg, #ecf0f1, #3498db);
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             display: flex;
             flex-direction: column;
             align-items: center;
+            animation: fadeIn 1s ease-in-out;
         }
 
-
-        .event-details {
-            flex: 1;
-            text-align: center;
-        }
-
-        h2 {
-            color: #2c3e50;
+        .event h2 {
+            color: #27ae60;
             font-size: 1.8em;
             margin-bottom: 0.5em;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -133,9 +133,11 @@
         }
 
         .head-details img {
-            width: 80px; /* Adjust the max-width as needed */
-    height: 80px;
-    margin-right: 1em; 
+            width: 80px;
+            height: 80px;
+            margin-right: 1em;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
 
         .event p {
@@ -155,6 +157,16 @@
             width: 100%;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
+
+        /* Optional: Add animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
@@ -172,30 +184,31 @@
 
     <main>
         <div class="contact-person">
-        <h2>Joint Secretaries of Integration'24</h2>
-        <div class="joint-secretaries">
-            <div class="secretary-details">
-                <img src="Puru.jpg" alt="Puru">
-                <p>Name: Purushottam Saha </p>
-                <p>Email: <a href="mailto:puru8017@gmail.com">puru8017@gmail.com</a></p>
-            </div>
-            <div class="secretary-details">
-                <img src="Manas.jpeg" alt="Manas">
-                <p>Name: Manas Sharma </p>
-                <p>Email: <a href="mailto:sharmamanas128@gmail.com">sharmamanas128@gmail.com</a></p>
-            </div>
-            <div class="secretary-details">
-                <img src="Ananyo.jpg" alt="Ananyo">
-                <p>Name: Ananyo Bose </p>
-                <p>Email: <a href="mailto:ananyobose1112@gmail.com">ananyobose1112@gmail.com</a></p>
-            </div>
-            <div class="secretary-details">
-                <img src="Nitya.jpg" alt="Nithyadev Allamneni">
-                <p>Name: Nithyadev Allamneni </p>
-                <p>Email: <a href="mailto:nithyadev0905@gmail.com">nithyadev0905@gmail.com</a></p>
+            <h2>Joint Secretaries of Integration'24</h2>
+            <div class="joint-secretaries">
+                <div class="secretary-details">
+                    <img src="Puru.jpg" alt="Puru">
+                    <p>Name: Purushottam Saha </p>
+                    <p>Email: <a href="mailto:puru8017@gmail.com">puru8017@gmail.com</a></p>
+                </div>
+                <div class="secretary-details">
+                    <img src="Manas.jpeg" alt="Manas">
+                    <p>Name: Manas Sharma </p>
+                    <p>Email: <a href="mailto:sharmamanas128@gmail.com">sharmamanas128@gmail.com</a></p>
+                </div>
+                    <div class="secretary-details">
+                    <img src="Ananyo.jpg" alt="Ananyo">
+                    <p>Name: Ananyo Bose </p>
+                    <p>Email: <a href="mailto:ananyobose1112@gmail.com">ananyobose1112@gmail.com</a></p>
+                </div>
+                <div class="secretary-details">
+                    <img src="Nitya.jpg" alt="Nityadev Allamneni">
+                    <p>Name: Nithyadev Allamneni </p>
+                    <p>Email: <a href="mailto:nithyadev0905@gmail.com">nithyadev0905@gmail.com</a></p>
+                </div>
             </div>
         </div>
-    </div>
+
         <div class="contact-person">
             <h2>Cultural Head</h2>
             <img src="Srijan.jpeg" alt="Cultural Head Picture">
@@ -239,7 +252,6 @@
             </div>
         </div>
 
-
         <div class="event">
             <div class="event-details">
                 <h2>Band-e-thlon & Cypher</h2>
@@ -260,7 +272,7 @@
 
         <div class="event">
             <div class="event-details">
-                <h2>Thru Da Lens (<a href="photography.integration@gmail.com">photography.integration@gmail.com</a>)</h2>
+                <h2>Thru Da Lens (<a href="mailto:photography.integration@gmail.com">photography.integration@gmail.com</a>)</h2>
                 <div class="head-details">
                     <img src="Koustav.jpeg" alt="Head 3 Picture">
                     <div>
@@ -318,3 +330,8 @@
 
     <footer>
         &copy; 2023 Cultural Chapter, Integration '24. All rights reserved
+    </footer>
+
+</body>
+
+</html>
