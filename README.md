@@ -130,7 +130,7 @@
     <nav>
         <a href="#">Events</a>
         <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <main>
