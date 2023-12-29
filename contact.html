@@ -86,13 +86,19 @@
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
+        }
+
+        .event img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-bottom: 1em;
         }
 
         .event-details {
             flex: 1;
-            margin-right: 1em;
+            text-align: center;
         }
 
         h2 {
@@ -100,6 +106,18 @@
             font-size: 1.8em;
             margin-bottom: 0.5em;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .head-details {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+
+        .head-details img {
+            max-width: 50px;
+            border-radius: 50%;
+            margin-right: 1em;
         }
 
         .event p {
@@ -130,34 +148,52 @@
 
     <nav>
         <a href="events.html">Events</a>
-        <a href="about.html">About</a>
+        <a href="#">About</a>
         <a href="contact.html">Contact</a>
     </nav>
 
     <main>
         <div class="contact-person">
             <h2>Cultural Head</h2>
-            <img src="cultural-head.jpg" alt="Cultural HeadPicture">
+            <img src="cultural-head.jpg" alt="Cultural Head Picture">
             <p>Name: [Cultural Head's Name]</p>
             <p>Email: <a href="mailto:cultural.head@email.com">cultural.head@email.com</a></p>
         </div>
 
         <div class="event">
+            <img src="event1.jpg" alt="Event 1 Picture">
             <div class="event-details">
                 <h2>Event 1</h2>
-                               <div class="head-details">
-                    <p><strong>Head 1:</strong> [Head 1's Name]</p>
-                    <p><strong>Head 2:</strong> [Head 2's Name]</p>
+                <div class="head-details">
+                    <img src="head1.jpg" alt="Head 1 Picture">
+                    <div>
+                        <p><strong>Head 1:</strong> [Head 1's Name]</p>
+                    </div>
+                </div>
+                <div class="head-details">
+                    <img src="head2.jpg" alt="Head 2 Picture">
+                    <div>
+                        <p><strong>Head 2:</strong> [Head 2's Name]</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="event">
+            <img src="event2.jpg" alt="Event 2 Picture">
             <div class="event-details">
                 <h2>Event 2</h2>
                 <div class="head-details">
-                    <p><strong>Head 1:</strong> [Head 1's Name]</p>
-                    <p><strong>Head 2:</strong> [Head 2's Name]</p>
+                    <img src="head3.jpg" alt="Head 3 Picture">
+                    <div>
+                        <p><strong>Head 1:</strong> [Head 3's Name]</p>
+                    </div>
+                </div>
+                <div class="head-details">
+                    <img src="head4.jpg" alt="Head 4 Picture">
+                    <div>
+                        <p><strong>Head 2:</strong> [Head 4's Name]</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,9 +203,4 @@
     </main>
 
     <footer>
-        &copy; 2023 Cultural Chapter, Integration '24. All rights reserved.
-    </footer>
-</body>
-
-</html>
-
+        &copy; 2023 Cultural Chapter, Integration '24. All rights reserved
