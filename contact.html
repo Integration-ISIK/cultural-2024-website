@@ -78,23 +78,35 @@
             margin-bottom: 2em;
         }
 
-        .contact-person img {
-            max-width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-bottom: 0.5em;
-        }
-
-        .event-coordinator {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+        .event {
+            border: 1px solid #bdc3c7;
             margin-bottom: 2em;
+            padding: 1.5em;
+            background: linear-gradient(45deg, #ecf0f1, #3498db);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .event-coordinator div {
-            width: 45%;
-            margin-bottom: 1em;
+        .event-details {
+            flex: 1;
+            margin-right: 1em;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .event p {
+            margin: 0.5em 0;
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.5;
         }
 
         footer {
@@ -117,48 +129,41 @@
     </header>
 
     <nav>
-        <a href="events.html">Events</a>
+        <a href="/">Events</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </nav>
 
     <main>
-        <div class="event-coordinator">
-            <div>
-                <h2>Event 1</h2>
-                <div>
-                    <img src="event1_coord1.jpg" alt="Event 1 Coordinator 1">
-                    <p>Name: Jane Smith</p>
-                    <p>Email: <a href="mailto:event1_coord1@example.com">event1_coord1@example.com</a></p>
-                    <p>Phone: +1 (123) 456-7890</p>
-                </div>
-                <div>
-                    <img src="event1_coord2.jpg" alt="Event 1 Coordinator 2">
-                    <p>Name: Mark Johnson</p>
-                    <p>Email:                     <a href="mailto:event1_coord2@example.com">event1_coord2@example.com</a></p>
-                    <p>Phone: +1 (234) 567-8901</p>
-                </div>
-            </div>
-
-            <div>
-                <h2>Event 2</h2>
-                <div>
-                    <img src="event2_coord1.jpg" alt="Event 2 Coordinator 1">
-                    <p>Name: Sarah Brown</p>
-                    <p>Email: <a href="mailto:event2_coord1@example.com">event2_coord1@example.com</a></p>
-                    <p>Phone: +1 (345) 678-9012</p>
-                </div>
-                <div>
-                    <img src="event2_coord2.jpg" alt="Event 2 Coordinator 2">
-                    <p>Name: Alex Davis</p>
-                    <p>Email: <a href="mailto:event2_coord2@example.com">event2_coord2@example.com</a></p>
-                    <p>Phone: +1 (456) 789-0123</p>
-                </div>
-            </div>
-
-            <!-- Add more events and coordinators as needed -->
-
+        <div class="contact-person">
+            <h2>Cultural Head</h2>
+            <img src="cultural-head.jpg" alt="Cultural HeadPicture">
+            <p>Name: [Cultural Head's Name]</p>
+            <p>Email: <a href="mailto:cultural.head@email.com">cultural.head@email.com</a></p>
         </div>
+
+        <div class="event">
+            <div class="event-details">
+                <h2>Event 1</h2>
+                               <div class="head-details">
+                    <p><strong>Head 1:</strong> [Head 1's Name]</p>
+                    <p><strong>Head 2:</strong> [Head 2's Name]</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-details">
+                <h2>Event 2</h2>
+                <div class="head-details">
+                    <p><strong>Head 1:</strong> [Head 1's Name]</p>
+                    <p><strong>Head 2:</strong> [Head 2's Name]</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more events as needed -->
+
     </main>
 
     <footer>
@@ -167,3 +172,4 @@
 </body>
 
 </html>
+
