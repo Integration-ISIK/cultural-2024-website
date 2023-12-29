@@ -74,6 +74,28 @@
             text-align: center;
         }
 
+        .contact-person {
+            margin-bottom: 2em;
+        }
+
+        .contact-person img {
+            max-width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 0.5em;
+        }
+
+        .event-coordinator {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .event-coordinator div {
+            width: 45%;
+            margin-bottom: 1em;
+        }
+
         footer {
             background: linear-gradient(45deg, #3498db, #e74c3c);
             color: #ecf0f1;
@@ -94,20 +116,38 @@
     </header>
 
     <nav>
-        <a href="README.md">Events</a>
-        <a href="#">About</a>
+        <a href="/">Events</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </nav>
 
     <main>
-        <p>If you have any questions or inquiries, feel free to reach out to us:</p>
-        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-        <p>Phone: +1 (123) 456-7890</p>
+        <div class="contact-person">
+            <img src="cultural_head.jpg" alt="Cultural Head">
+            <h2>Cultural Head</h2>
+            <p>Name: John Doe</p>
+            <p>Email: <a href="mailto:culturalhead@example.com">culturalhead@example.com</a></p>
+        </div>
+
+        <h2>Event Coordinators</h2>
+        <div class="event-coordinator">
+            <div>
+                <img src="event_coord1.jpg" alt="Event Coordinator 1">
+                <h3>Event Coordinator 1</h3>
+                <p>Name: Jane Smith</p>
+                <p>Email: <a href="mailto:eventcoord1@example.com">eventcoord1@example.com</a></p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+            <div>
+                <img src="event_coord2.jpg" alt="Event Coordinator 2">
+                <h3>Event Coordinator 2</h3>
+                <p>Name: Mark Johnson</p>
+                <p>Email: <a href="mailto:eventcoord2@example.com">eventcoord2@example.com</a></p>
+                <p>Phone: +1 (234) 567-8901</p>
+            </div>
+            <!-- Add more event coordinators as needed -->
+        </div>
     </main>
 
     <footer>
-        &copy; 2023 Cultural Chapter, Integration '24. All rights reserved.
-    </footer>
-</body>
-
-</html>
+        &copy; 
