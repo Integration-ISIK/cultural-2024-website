@@ -18,7 +18,6 @@
             color: #333;
             line-height: 1.6;
             margin: 0;
-            overflow: hidden;
         }
 
         header {
@@ -76,6 +75,10 @@
             gap: 1em;
             padding: 2em;
             text-align: center;
+            position: relative;
+            z-index: 0; /* Set the images below the footer */
+            overflow: auto; /* Enable scrolling */
+            max-height: calc(100vh - 80px); /* Adjust the max height based on footer height */
         }
 
         .image-gallery img {
@@ -95,10 +98,8 @@
             color: #ecf0f1;
             text-align: center;
             padding: 1.5em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1; /* Ensure the footer is above the images */
         }
     </style>
 </head>
@@ -113,7 +114,7 @@
         <a href="index.html">Events</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="photos.html">Past Photos</a>
+        <a href="past-photos.html">Past Year Photos</a>
     </nav>
 
     <main class="image-gallery">
@@ -146,9 +147,10 @@
     </main>
 
     <footer>
-        &copy; 2023 Cultural Chapter, Integration '24. All rights reserved.
+        &copy; 2023 Cultural Chapter, Integration '24. All rights reserved
     </footer>
 
 </body>
 
 </html>
+
