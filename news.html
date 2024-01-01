@@ -109,6 +109,14 @@
         .slider-btn:hover {
             background-color: transparent;
         }
+
+        .slider-btn-left {
+            left: 0;
+        }
+
+        .slider-btn-right {
+            right: 0;
+        }
     </style>
 </head>
 
@@ -145,8 +153,8 @@
                     <!-- Add more slides as needed -->
                 </div>
 
-                <button class="slider-btn" onclick="prevSlide()">❮</button>
-                <button class="slider-btn" onclick="nextSlide()">❯</button>
+                <button class="slider-btn slider-btn-left" onclick="prevSlide()">❮</button>
+                <button class="slider-btn slider-btn-right" onclick="nextSlide()">❯</button>
             </div>
         </section>
     </main>
