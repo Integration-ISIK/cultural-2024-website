@@ -56,13 +56,18 @@
             font-size: 1.2em;
             transition: color 0.3s ease-in-out;
             border-radius: 10px;
-            background: linear-gradient(45deg, #fd1d1d, #fcb045);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         nav a:hover {
             color: #4389a2;
             transform: scale(1.05);
+        }
+
+        nav a.active {
+            background: linear-gradient(45deg, #fd1d1d, #fcb045);
+            color: transparent;
+            text-shadow: none;
         }
 
         main {
@@ -130,15 +135,24 @@
             text-align: center;
             color: white;
         }
+
+        #play-button {
+            background-color: white;
+            color: #1a2980;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
-    <audio id="background-audio" autoplay loop>
-    <source src="cont.mp3" type="audio/mp3">
-    Your browser does not support the audio tag.
-</audio>
-
+    <audio id="background-audio" loop>
+        <source src="cont.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
 
     <header>
         <img src="cultural.jpg" alt="Cultural Chapter Logo">
@@ -146,7 +160,7 @@
     </header>
 
     <nav>
-        <a href="news.html">News</a>
+        <a href="news.html" onclick="startBackgroundAudio()" class="active">News</a>
         <a href="about.html">About</a>
         <a href="index.html">Events</a>
         <a href="contact.html">Contact</a>
@@ -171,7 +185,7 @@
                     </div>
                     <!-- Add a video slide -->
                     <div class="slide">
-                        <video width="100%" height="auto" controls onplay="pauseBackgroundAudio()" onended="resumeBackgroundAudio()">
+                        <video width="100%" height="auto" controls>
                             <source src="bet.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -188,6 +202,8 @@
     <div id="audio-player">
         Background Music: <span id="audio-status">Playing</span> | <a href="#" onclick="toggleAudio()">Toggle</a>
     </div>
+
+    <button id="play-button" onclick="startBackgroundAudio()">Play Background Music</button>
 
     <script>
         let currentIndex = 0;
@@ -232,6 +248,11 @@
         }
 
         function resumeBackgroundAudio() {
+            audio.play();
+            audioStatus.innerText = 'Playing';
+        }
+
+        function startBackgroundAudio() {
             audio.play();
             audioStatus.innerText = 'Playing';
         }
