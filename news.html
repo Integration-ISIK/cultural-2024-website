@@ -119,10 +119,26 @@
         .slider-btn-right {
             right: 0;
         }
+
+        #audio-player {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1a2980;
+            padding: 1em;
+            text-align: center;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
+    <audio id="background-audio" autoplay loop>
+        <source src="cont.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
     <header>
         <img src="cultural.jpg" alt="Cultural Chapter Logo">
         <h1>Integration 2024, Cultural Chapter</h1>
@@ -155,7 +171,7 @@
                     <!-- Add a video slide -->
                     <div class="slide">
                         <video width="100%" height="auto" controls>
-                            <source src="bet.mp4" type="video/mp4">
+                            <source src="your-video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -168,9 +184,15 @@
         </section>
     </main>
 
+    <div id="audio-player">
+        Background Music: <span id="audio-status">Playing</span> | <a href="#" onclick="toggleAudio()">Toggle</a>
+    </div>
+
     <script>
         let currentIndex = 0;
         let intervalId;
+        const audio = document.getElementById('background-audio');
+        const audioStatus = document.getElementById('audio-status');
 
         function showSlide(index) {
             const slider = document.querySelector('.slider');
@@ -210,6 +232,17 @@
         document.querySelectorAll('.slider-btn').forEach(btn => {
             btn.addEventListener('click', stopAutoSlide);
         });
+
+        // Toggle audio playback
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                audioStatus.innerText = 'Playing';
+            } else {
+                audio.pause();
+                audioStatus.innerText = 'Paused';
+            }
+        }
     </script>
 </body>
 
