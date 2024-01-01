@@ -56,6 +56,7 @@
             font-size: 1.2em;
             transition: color 0.3s ease-in-out;
             border-radius: 10px;
+            background: linear-gradient(45deg, #fd1d1d, #fcb045);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
@@ -64,10 +65,10 @@
             transform: scale(1.05);
         }
 
-        nav a.active {
-            background: linear-gradient(45deg, #fd1d1d, #fcb045);
-            color: transparent;
-            text-shadow: none;
+        /* Style the News button with orange color */
+        nav a#news-button {
+            background: linear-gradient(45deg, #fcb045, #fd1d1d);
+            color: #fff;
         }
 
         main {
@@ -160,7 +161,7 @@
     </header>
 
     <nav>
-        <a href="news.html" onclick="startBackgroundAudio()" class="active">News</a>
+        <a href="news.html" id="news-button">News</a>
         <a href="about.html">About</a>
         <a href="index.html">Events</a>
         <a href="contact.html">Contact</a>
@@ -255,6 +256,7 @@
         function startBackgroundAudio() {
             audio.play();
             audioStatus.innerText = 'Playing';
+            document.getElementById('play-button').style.display = 'none';
         }
 
         // Start the auto slide on page load
