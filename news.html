@@ -1,142 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integration 2024, Cultural Chapter - News</title>
-    <link rel="icon" href="cultural.ico" type="image/x-icon">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a2980, #26d0ce);
-            color: #fff;
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        header {
-            background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
-            color: #fff;
-            text-align: center;
-            padding: 2em 0;
-            position: relative;
-        }
-
-        header img {
-            max-width: 120px;
-            height: 120px;
-            position: absolute;
-            left: 1em;
-            top: 50%;
-            transform: translateY(-50%);
-            border-radius: 50%;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin-top: 0.5em;
-            margin-left: 120px;
-            display: inline-block;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        nav {
-            background: linear-gradient(45deg, #5c258d, #4389a2);
-            padding: 1em 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 1em;
-            margin: 0 1em;
-            font-size: 1.2em;
-            transition: color 0.3s ease-in-out;
-            border-radius: 10px;
-            background: linear-gradient(45deg, #fd1d1d, #fcb045);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        nav a:hover {
-            color: #4389a2;
-            transform: scale(1.05);
-        }
-
-        main {
-            padding: 2em;
-        }
-
-        .slider-container {
-            width: 80%;
-            margin: 0 auto;
-            overflow: hidden;
-            position: relative;
-            border: 1px solid white;
-            border-radius: 10px;
-        }
-
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .slide img,
-        .slide video {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .slider-btn {
-            position: absolute;
-            top: 50%;
-            width: 40px;
-            height: 40px;
-            background-color: white;
-            border: none;
-            color: #1a2980;
-            font-size: 20px;
-            cursor: pointer;
-            z-index: 2;
-        }
-
-        .slider-btn:hover {
-            background-color: transparent;
-        }
-
-        .slider-btn-left {
-            left: 0;
-        }
-
-        .slider-btn-right {
-            right: 0;
-        }
-
-        #audio-player {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #1a2980;
-            padding: 1em;
-            text-align: center;
-            color: white;
-            display: none;
-        }
-    </style>
-</head>
+<!-- ... Your existing HTML code ... -->
 
 <body>
     <audio id="background-audio" loop>
-        <source src="cont.mp3" type="audio/mp3">
+        <source src="your-audio-file.mp3" type="audio/mp3">
         Your browser does not support the audio tag.
     </audio>
 
@@ -171,8 +37,8 @@
                     </div>
                     <!-- Add a video slide -->
                     <div class="slide">
-                        <video width="100%" height="auto" controls>
-                            <source src="bet.mp4" type="video/mp4">
+                        <video width="100%" height="auto" controls onplay="pauseAudio()" onpause="resumeAudio()">
+                            <source src="your-video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -188,6 +54,7 @@
     <script>
         let currentIndex = 0;
         let intervalId;
+        let audioPausedByVideo = false;
         const audio = document.getElementById('background-audio');
         const audioPlayer = document.getElementById('audio-player');
 
@@ -214,7 +81,9 @@
 
         function startAutoSlide() {
             intervalId = setInterval(() => {
-                nextSlide();
+                if (!audioPausedByVideo) {
+                    nextSlide();
+                }
             }, 3000); // Change the interval as needed (in milliseconds)
         }
 
@@ -226,6 +95,28 @@
             startAutoSlide();
             audio.play();
             audioPlayer.style.display = 'block';
+        }
+
+        function pauseAudio() {
+            audio.pause();
+            audioPausedByVideo = true;
+        }
+
+        function resumeAudio() {
+            if (!audioPlayer.style.display || audioPlayer.style.display === 'block') {
+                audio.play();
+            }
+            audioPausedByVideo = false;
+        }
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                document.getElementById('audio-status').innerText = 'Playing';
+            } else {
+                audio.pause();
+                document.getElementById('audio-status').innerText = 'Paused';
+            }
         }
     </script>
 
