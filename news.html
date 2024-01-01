@@ -13,7 +13,6 @@
             color: #fff;
             line-height: 1.6;
             margin: 0;
-            
         }
 
         header {
@@ -70,16 +69,16 @@
             padding: 2em;
         }
 
-        .news-slider {
-            position: relative;
-            max-width: 800px;
+        .slider-container {
+            width: 80%;
             margin: 0 auto;
             overflow: hidden;
+            position: relative;
+            border: 1px solid white;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
         }
 
-        .slides {
+        .slider {
             display: flex;
             transition: transform 0.5s ease-in-out;
         }
@@ -92,35 +91,23 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
 
-        .slider-button {
+        .slider-btn {
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
             width: 40px;
             height: 40px;
-            background: transparent;
+            background-color: white;
             border: none;
-            outline: none;
+            color: #1a2980;
+            font-size: 20px;
             cursor: pointer;
-            transition: background 0.3s ease-in-out;
+            z-index: 2;
         }
 
-        .slider-button:hover {
-            background: rgba(255, 255, 255, 0.5);
-        }
-
-        footer {
-            background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
-            color: #fff;
-            text-align: center;
-            padding: 1.5em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        .slider-btn:hover {
+            background-color: transparent;
         }
     </style>
 </head>
@@ -140,52 +127,52 @@
     </nav>
 
     <main>
-        <h2>Latest News</h2>
-        <div class="news-slider">
-            <div class="slides">
-                <div class="slide">
-                    <img src="AlaapPoster.png" alt="News 1">
+        <section>
+            <h2>Latest News</h2>
+
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <a href="news_image1.jpg" target="_blank">
+                            <img src="news_image1.jpg" alt="News 1">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="news_image2.jpg" target="_blank">
+                            <img src="news_image2.jpg" alt="News 2">
+                        </a>
+                    </div>
+                    <!-- Add more slides as needed -->
                 </div>
-                <div class="slide">
-                    <img src="alaapjudge1.png" alt="News 2">
-                </div>
-                
-                <!-- Add more slides as needed -->
+
+                <button class="slider-btn" onclick="prevSlide()">❮</button>
+                <button class="slider-btn" onclick="nextSlide()">❯</button>
             </div>
-            <button class="slider-button" onclick="prevSlide()">❮</button>
-            <button class="slider-button" onclick="nextSlide()">❯</button>
-        </div>
+        </section>
     </main>
 
-    <footer>
-        &copy; 2023 Cultural Chapter, Integration '24. All rights reserved<br>
-        <span style="font-size: 0.8em;">Designed by Srijan Chatterjee</span>
-    </footer>
-
     <script>
-        // JavaScript for manual slider control
-        let slideIndex = 0;
+        let currentIndex = 0;
 
         function showSlide(index) {
-            const slides = document.querySelector('.slides');
-            const slideWidth = document.querySelector('.slide').offsetWidth;
+            const slider = document.querySelector('.slider');
+            const slides = document.querySelectorAll('.slide');
+            const slideWidth = slides[0].offsetWidth;
 
-            if (index < 0) {
-                index = slides.children.length - 1;
-            } else if (index >= slides.children.length) {
-                index = 0;
-            }
-
-            slides.style.transform = `translateX(-${index * slideWidth}px)`;
-            slideIndex = index;
-        }
-
-        function prevSlide() {
-            showSlide(slideIndex - 1);
+            currentIndex = index;
+            slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
         }
 
         function nextSlide() {
-            showSlide(slideIndex + 1);
+            const slides = document.querySelectorAll('.slide');
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            const slides = document.querySelectorAll('.slide');
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
         }
     </script>
 </body>
