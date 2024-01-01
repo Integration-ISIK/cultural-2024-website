@@ -127,6 +127,20 @@
             width: 100%;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
+
+        /* Music Player Styles */
+        #music-player {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2em;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 300px;
+            margin-top: 1em;
+        }
     </style>
 </head>
 
@@ -149,9 +163,9 @@
             <h2>ISI, Integration and its Cultural Heritage</h2>
             <p>
                 The Indian Statistical Institute, alongside being internationally reputed for its research, teaching and training programmes, produce students who are pretty much active in cultural, technological and athletic ways other than being among the best students in the nation, academically. INTEGRATION, the annual techno-cultural-sports fest of the students of ISI has been a platform since years, where students of other institutions from all over the nation interact with students of ISI through numerous events and competitions with attractive prizes, judged by honorary VIP judges like Sandip Ray.
-</p>
+            </p>
             <p>
-Eminent personalities namely, Dr. Pranab Mukherjee, Arun Shourey, Harsha Bhogle, Sourav Ganguly, Anupam Kher, Rita Bhimani were present on the same platform here, making it impossible to avoid headline in newspapers and media and helping INTEGRATION pose as one of the most decorated events in Kolkata in recent times. Over the course of the year, INTEGRATION has attracted mass, truly diverse in nature. Starting as a small scale fest, the difference sort of aura of INTEGRATION helped it reach the position of one of the biggest fests the nation has ever seen.
+                Eminent personalities namely, Dr. Pranab Mukherjee, Arun Shourey, Harsha Bhogle, Sourav Ganguly, Anupam Kher, Rita Bhimani were present on the same platform here, making it impossible to avoid headline in newspapers and media and helping INTEGRATION pose as one of the most decorated events in Kolkata in recent times. Over the course of the year, INTEGRATION has attracted mass, truly diverse in nature. Starting as a small scale fest, the difference sort of aura of INTEGRATION helped it reach the position of one of the biggest fests the nation has ever seen.
             </p>
         </section>
 
@@ -209,14 +223,23 @@ Join the pixel party, where creativity knows no bounds! It's not just a competit
                     </div>
             </div>
         </section>
-
     </main>
 
-    <footer>
-    &copy; 2023 Cultural Chapter, Integration '24. All rights reserved<br>
-    <span style="font-size: 0.8em;">Designed by Srijan Chatterjee</span>
+    <footer style="background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045); color: #fff; text-align: center; padding: 1.5em 0; position: fixed; bottom: 0; width: 100%; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);">
+    <div style="max-width: 800px; margin: 0 auto;">
+        <p>&copy; 2023 Cultural Chapter, Integration '24. All rights reserved</p>
+        <p style="font-size: 0.8em;">Designed by Srijan Chatterjee</p>
+    </div>
 </footer>
+
+
+    <!-- Music Player -->
+    <div id="music-player">
+        <audio controls>
+            <source src="cont.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
 </body>
 
 </html>
-
