@@ -123,10 +123,26 @@
             width: 100%;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
+
+        #audio-player {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1a2980;
+            padding: 1em;
+            text-align: center;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
+    <audio id="background-audio" autoplay loop>
+        <source src="cont.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
     <header>
         <img src="cultural.jpg" alt="Cultural Chapter Logo">
         <h1>Integration 2024, Cultural Chapter</h1>
@@ -246,9 +262,29 @@
     </main>
 
     <footer>
-    &copy; 2023 Cultural Chapter, Integration '24. All rights reserved<br>
-    <span style="font-size: 0.8em;">Designed by Srijan Chatterjee</span>
-</footer>
+        &copy; 2023 Cultural Chapter, Integration '24. All rights reserved<br>
+        <span style="font-size: 0.8em;">Designed by Srijan Chatterjee</span>
+    </footer>
+
+    <div id="audio-player">
+        Background Music: <span id="audio-status">Playing</span> | <a href="#" onclick="toggleAudio()">Toggle</a>
+    </div>
+
+    <script>
+        const audio = document.getElementById('background-audio');
+        const audioStatus = document.getElementById('audio-status');
+
+        // Toggle audio playback
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                audioStatus.innerText = 'Playing';
+            } else {
+                audio.pause();
+                audioStatus.innerText = 'Paused';
+            }
+        }
+    </script>
 </body>
 
 </html>
