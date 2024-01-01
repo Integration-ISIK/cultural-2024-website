@@ -161,6 +161,7 @@
 
     <script>
         let currentIndex = 0;
+        let intervalId;
 
         function showSlide(index) {
             const slider = document.querySelector('.slider');
@@ -182,6 +183,24 @@
             currentIndex = (currentIndex - 1 + slides.length) % slides.length;
             showSlide(currentIndex);
         }
+
+        function startAutoSlide() {
+            intervalId = setInterval(() => {
+                nextSlide();
+            }, 3000); // Change the interval as needed (in milliseconds)
+        }
+
+        function stopAutoSlide() {
+            clearInterval(intervalId);
+        }
+
+        // Start the auto slide on page load
+        startAutoSlide();
+
+        // Stop the auto slide when the user interacts with manual controls
+        document.querySelectorAll('.slider-btn').forEach(btn => {
+            btn.addEventListener('click', stopAutoSlide);
+        });
     </script>
 </body>
 
