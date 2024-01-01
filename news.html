@@ -65,12 +65,6 @@
             transform: scale(1.05);
         }
 
-        /* Style the News button with orange color */
-        nav a#news-button {
-            background: linear-gradient(45deg, #fcb045, #fd1d1d);
-            color: #fff;
-        }
-
         main {
             padding: 2em;
         }
@@ -135,16 +129,7 @@
             padding: 1em;
             text-align: center;
             color: white;
-        }
-
-        #play-button {
-            background-color: white;
-            color: #1a2980;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            display: none;
         }
     </style>
 </head>
@@ -161,7 +146,7 @@
     </header>
 
     <nav>
-        <a href="news.html" id="news-button">News</a>
+        <a href="javascript:void(0);" onclick="startNews()">News</a>
         <a href="about.html">About</a>
         <a href="index.html">Events</a>
         <a href="contact.html">Contact</a>
@@ -200,17 +185,11 @@
         </section>
     </main>
 
-    <div id="audio-player">
-        Background Music: <span id="audio-status">Playing</span> | <a href="#" onclick="toggleAudio()">Toggle</a>
-    </div>
-
-    <button id="play-button" onclick="startBackgroundAudio()">Play Background Music</button>
-
     <script>
         let currentIndex = 0;
         let intervalId;
         const audio = document.getElementById('background-audio');
-        const audioStatus = document.getElementById('audio-status');
+        const audioPlayer = document.getElementById('audio-player');
 
         function showSlide(index) {
             const slider = document.querySelector('.slider');
@@ -243,41 +222,17 @@
             clearInterval(intervalId);
         }
 
-        function pauseBackgroundAudio() {
-            audio.pause();
-            audioStatus.innerText = 'Paused';
-        }
-
-        function resumeBackgroundAudio() {
+        function startNews() {
+            startAutoSlide();
             audio.play();
-            audioStatus.innerText = 'Playing';
-        }
-
-        function startBackgroundAudio() {
-            audio.play();
-            audioStatus.innerText = 'Playing';
-            document.getElementById('play-button').style.display = 'none';
-        }
-
-        // Start the auto slide on page load
-        startAutoSlide();
-
-        // Stop the auto slide when the user interacts with manual controls
-        document.querySelectorAll('.slider-btn').forEach(btn => {
-            btn.addEventListener('click', stopAutoSlide);
-        });
-
-        // Toggle audio playback
-        function toggleAudio() {
-            if (audio.paused) {
-                audio.play();
-                audioStatus.innerText = 'Playing';
-            } else {
-                audio.pause();
-                audioStatus.innerText = 'Paused';
-            }
+            audioPlayer.style.display = 'block';
         }
     </script>
+
+    <div id="audio-player">
+        <a href="javascript:void(0);" onclick="toggleAudio()">Toggle Audio</a>
+        <p id="audio-status">Playing</p>
+    </div>
 </body>
 
 </html>
