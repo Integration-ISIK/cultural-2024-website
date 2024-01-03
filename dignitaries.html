@@ -9,9 +9,8 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: url('indian-pattern.jpg') fixed;
-            background-size: cover;
-            color: #fff;
+            background: linear-gradient(135deg, #ffcc80, #ff9966); /* Gradient with warm tones */
+            color: #1a1a1a; /* Dark text color */
             line-height: 1.6;
             margin: 0;
         }
@@ -87,15 +86,43 @@
         .slide {
             min-width: 100%;
             box-sizing: border-box;
-            text-align: center;
-            padding: 2em;
+            padding: 2em; /* Add padding for better readability */
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
-        .judge-image {
-            max-width: 200px;
-            height: auto;
-            border-radius: 50%;
-            margin-bottom: 1em;
+        .slide h2 {
+            color: #1a2980; /* Dark blue heading color */
+        }
+
+        .slide p {
+            color: #333; /* Dark text color */
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border: none;
+            color: #1a2980;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .slider-btn:hover {
+            background-color: transparent;
+        }
+
+        .slider-btn-left {
+            left: 0;
+        }
+
+        .slider-btn-right {
+            right: 0;
         }
 
         #audio-player {
@@ -129,7 +156,6 @@
         <a href="index.html">Events</a>
         <a href="contact.html">Contact</a>
         <a href="photos.html">Gallery</a>
-        <a href="dignitaries.html">Dignitaries</a>
     </nav>
 
     <main>
@@ -138,50 +164,25 @@
 
             <div class="slider-container">
                 <div class="slider">
-                    <!-- Slide 1 -->
+                    <!-- Judge 1 -->
                     <div class="slide">
-                        <img src="judge1.jpg" alt="Judge 1" class="judge-image">
-                        <h3>John Doe</h3>
-                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h2>Judge 1</h2>
+                        <img src="judge1.jpg" alt="Judge 1">
+                        <p>Description of Judge 1.</p>
                     </div>
-                    <!-- Slide 2 -->
+
+                    <!-- Judge 2 -->
                     <div class="slide">
-                        <img src="judge2.jpg" alt="Judge 2" class="judge-image">
-                        <h3>Jane Smith</h3>
-                        <p>Description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h2>Judge 2</h2>
+                        <img src="judge2.jpg" alt="Judge 2">
+                        <p>Description of Judge 2.</p>
                     </div>
-                    <!-- Slide 3 -->
-                    <div class="slide">
-                        <img src="judge3.jpg" alt="Judge 3" class="judge-image">
-                        <h3>Michael Johnson</h3>
-                        <p>Description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="slide">
-                        <img src="judge4.jpg" alt="Judge 4" class="judge-image">
-                        <h3>Emily Davis</h3>
-                        <p>Description: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <!-- Slide 5 -->
-                    <div class="slide">
-                        <img src="judge5.jpg" alt="Judge 5" class="judge-image">
-                        <h3>Robert Anderson</h3>
-                        <p>Description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    </div>
-                    <!-- Slide 6 -->
-                    <div class="slide">
-                        <img src="judge6.jpg" alt="Judge 6" class="judge-image">
-                        <h3>Olivia White</h3>
-                        <p>Description: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                    </div>
-                    <!-- Slide 7 -->
-                    <div class="slide">
-                        <img src="judge7.jpg" alt="Judge 7" class="judge-image">
-                        <h3>William Brown</h3>
-                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                    <!-- Add more slides as needed -->
+
+                    <!-- Add more slides for other judges -->
                 </div>
+
+                <button class="slider-btn slider-btn-left" onclick="prevSlide()">❮</button>
+                <button class="slider-btn slider-btn-right" onclick="nextSlide()">❯</button>
             </div>
         </section>
     </main>
