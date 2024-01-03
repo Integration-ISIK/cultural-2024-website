@@ -9,8 +9,8 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ffcc80, #ff9966); /* Gradient with warm tones */
-            color: #1a1a1a; /* Dark text color */
+            background: linear-gradient(135deg, #ffcc80, #ff9966);
+            color: #1a1a1a;
             line-height: 1.6;
             margin: 0;
         }
@@ -84,24 +84,23 @@
         }
 
         .slide {
-            min-width: 100%;
             box-sizing: border-box;
-            padding: 2em; /* Add padding for better readability */
-            background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+            padding: 2em;
+            background: rgba(0, 0, 0, 0.8);
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 223, 0, 0.5); /* Golden box shadow */
+            box-shadow: 0 0 10px rgba(255, 223, 0, 0.5);
             text-align: center;
         }
 
         .slide h2,
         .slide p {
-            color: #ffd700; /* Golden text color */
+            color: #ffd700;
             margin-bottom: 10px;
         }
 
         .judge img {
-            max-width: 100%; /* Make images responsive */
-            border-radius: 50%; /* Circular border for images */
+            max-width: 100%;
+            border-radius: 50%;
         }
 
         .judge h3 {
@@ -116,9 +115,9 @@
             top: 50%;
             width: 40px;
             height: 40px;
-            background-color: #000; /* Black background for buttons */
+            background-color: #000;
             border: none;
-            color: #ffd700; /* Golden text color for buttons */
+            color: #ffd700;
             font-size: 20px;
             cursor: pointer;
             z-index: 2;
@@ -229,7 +228,6 @@ Snigdhadeb was awarded the Radio Mirchi Music Award Bangla as the male vocalist 
                             <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Thirtharaj Sur</h3>
                         </div>
 
-
                         <!-- Add more judges as needed -->
 
                     </div>
@@ -257,10 +255,14 @@ Snigdhadeb was awarded the Radio Mirchi Music Award Bangla as the male vocalist 
         function showSlide(index) {
             const slider = document.querySelector('.slider');
             const slides = document.querySelectorAll('.slide');
-            const slideWidth = slides[0].offsetWidth;
+
+            let totalWidth = 0;
+            for (let i = 0; i < index; i++) {
+                totalWidth += slides[i].offsetWidth;
+            }
 
             currentIndex = index;
-            slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+            slider.style.transform = `translateX(-${totalWidth}px)`;
         }
 
         function nextSlide() {
