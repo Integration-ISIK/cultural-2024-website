@@ -18,7 +18,7 @@
             background: #f8f9fa;
             color: #333;
             line-height: 1.6;
-             margin-bottom: 60px;
+            margin-bottom: 60px;
         }
 
         header {
@@ -84,11 +84,18 @@
             margin-top: 1em;
         }
 
-        .secretary-details {
+        .secretary-details,
+        .contact-person,
+        .head-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
         }
 
-        .secretary-details img {
+        .secretary-details img,
+        .contact-person img,
+        .head-details img {
             width: 50px;
             height: 50px;
             margin-right: 0.5em;
@@ -140,7 +147,6 @@
             width: 100px;
             height: 100px;
             margin-right: 0.5em;
-            /*border-radius: 50%;*/
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
 
@@ -180,7 +186,7 @@
         <h1>Contact the Cultural Team</h1>
     </header>
 
-     <nav>
+    <nav>
         <a href="news.html">News</a>
         <a href="dignitaries.html">Dignitaries</a>
         <a href="about.html">About</a>
@@ -348,13 +354,13 @@
 
         <!-- Add more events as needed -->
 
+
     </main>
 
     <footer>
-    &copy; 2024 Cultural Chapter, Integration '24. All rights reserved<br>
-    <span style="font-size: 0.8em;">Designed by Srijan Chatterjee</span>
-</footer>
-
+        &copy; 2024 Cultural Chapter, Integration '24. All rights reserved<br>
+        <span style="font-size: 0.8em;">Designed by Srijan Chatterjee</span>
+    </footer>
 
 </body>
 
