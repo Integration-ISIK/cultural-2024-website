@@ -69,28 +69,14 @@
             padding: 2em;
         }
 
-        .slider-container {
-            width: 80%;
-            margin: 0 auto;
-            overflow: hidden;
-            position: relative;
-            border: 1px solid white;
-            border-radius: 10px;
-        }
-
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
         .slide {
-            width: 100%; /* Each slide has the same width */
             box-sizing: border-box;
             padding: 2em;
             background: rgba(0, 0, 0, 0.8);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(255, 223, 0, 0.5);
             text-align: center;
+            margin-bottom: 2em; /* Add some spacing between sections */
         }
 
         .slide h2,
@@ -109,31 +95,6 @@
             font-size: 1.5em;
             font-weight: bold;
             margin-top: 10px;
-        }
-
-        .slider-btn {
-            position: absolute;
-            top: 50%;
-            width: 40px;
-            height: 40px;
-            background-color: #000;
-            border: none;
-            color: #ffd700;
-            font-size: 20px;
-            cursor: pointer;
-            z-index: 2;
-        }
-
-        .slider-btn:hover {
-            background-color: transparent;
-        }
-
-        .slider-btn-left {
-            left: 0;
-        }
-
-        .slider-btn-right {
-            right: 0;
         }
 
         #audio-player {
@@ -174,136 +135,128 @@
         <section>
             <h2>Dignitaries</h2>
 
-            <div class="slider-container">
-                <div class="slider">
-                    <!-- Slide 1 with Multiple Judges -->
-                    <div class="slide">
-                        <h2>Alaap (Final)</h2>
-
-                        <!-- Judge 1 -->
-                        <div class="judge">
-                            <img src="alaapjudge1.jpg" alt="Judge 1">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Kajal Sengupta</h3>
-                            <p>Sri Kajal Sengupta, an illustrious figure in the realm of music, proudly serves as the Honorary Secretary of "Sarbabharatiya Sangeet o Sanskriti Parishad." Renowned for his profound expertise in Rabindrasangeet and a myriad of other musical genres, he stands as a beacon of artistry and dedication.
-
-With a trailblazing career marked by excellence, Sri Kajal Sengupta has garnered numerous accolades on both national and international stages. His unwavering commitment to the art of music has earned him prestigious awards and honors, making him a distinguished luminary in the world of melody.
-
-Beyond his accomplishments, Sri Kajal Sengupta's contributions extend far and wide, enriching the cultural tapestry with his exceptional talent. As a judge, his discerning ear and insightful critique promise to elevate any musical event, leaving an indelible mark on performers and audiences alike. We are honored to have such a maestro grace our event with his presence, adding an extra layer of brilliance to the celebration of art and culture.</p>
-                        </div>
-
-                        <!-- Judge 2 -->
-                        <div class="judge">
-                            <img src="alaapjudge2.png" alt="Judge 2">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Snigdhadeb Sengupta</h3>
-                            <p>Snigdhadeb has learnt Hindustani Classical and Semiclassical music for 18 years from Debi Ranjan Bandyopadhyay and later also from Anjan Majumdar for a few years. He has been awarded the Golden Talent of Bengal by Pandit Ravi Kichlu Foundation and HMV in the junior group. He has also received awards and certicates if merit in competitive events organized by the West Bengal State Music Academy and the Dover Lane Music Conference.
-Snigdhadeb was awarded the Radio Mirchi Music Award Bangla as the male vocalist of the year in 2016 for his first Bangla original. He has been performing in different parts of the country and is now regularly performing in national and sattellite television and radio channels. He is known for contemporary Bangla originals, traditional Bangla songs and Nazrulgeeti to his audience. He has also been working as a composer recently.</p>
-                        </div>
-
-                       <h2>Thru da Lens Judge</h2>  
-                            <div class="judge">
-                            <img src="judgetdl.png" alt="Judge 1">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Dipanjan Pal</h3>
-                            <p>A multiple international award winning photographer</p>
-
-
-                    </div>
-
-                    <div class="slide">
-                        <h2>Alaap (Prelims)</h2>
-
-                        <!-- Judge 1 -->
-                        <div class="judge">
-                            <img src="monali.jpg" alt="Judge 1">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Monali Mitra Paladhi</h3>
-                            <p>Monali Mitra Paladhi was born into a musical family and commenced her singing journey under the guidance of her father, Late Sri Manick Chandra Paladhi, at a very young age. She showcased her talent on various prestigious platforms such as All India Radio and Doordarshan.
-
-Her training in Hindustani Classical music began with Late Sri Shanti Ranjan Sen and continued under the tutelage of Late Sri Kamal Chowdhury, a disciple of Ustad Amir Khan. Additionally, she learned Nazrul Geeti from Sri Kashinath Das and Smt. Ratri Bose, while honing her skills in semi-classical music from Bidushi Sipra Bose and Sri Baloo Dutt. Monali is renowned for her expertise in Nazrulgeeti, light classical music, and traditional Bangla songs.</p>
-                            </div>
-
-                        <!-- Judge 2 -->
-                        <div class="judge">
-                            <img src="sb.jpg" alt="Judge 2">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Surankan Bhowmick</h3>
-                            <p>Champion of Eto Sur aar Eto Gan , presented by DD Bangla 2013 ,
-
-Participant of Zee Bangla Sa Re Ga Ma Pa 2015 , 
-
-State Music Academy Champion for Nazrul geeti and Bhajan 2019
-
-The Times of India Best male vocalist for Kishore Kumar Award 2022
-
-Regular artist of various Television channel like Aakash Aath , Rupashi Bangla, Rplus , High news, 
-Received so many appreciation from many corners of West Bengal and others State as well as Bangladesh
-Known face on social media.</p>
-
-                           <h2>Accompaanying Percussionist</h2>  
-                            <div class="judge">
-                            <img src="supriya.jpg" alt="Judge 1">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Supriya Das Bala</h3>
-                            <p>Known face in Social Media and Televisions. Expert percussionist and teacher as well, has worked professionally with famous artists in popular TV shows.</p>
-
-                            </div>
-                            
-
-                            
-                        </div>
-
-                        
-
-                        <!-- Add more judges as needed -->
-
-                    </div>
-
-                    <!-- Slide 2 with Another Set of Judges -->
-                    <div class="slide">
-                        <h2>Prahelika Quiz Masters</h2>
-
-                        <!-- Judge 3 -->
-                        <div class="judge">
-                            <img src="Baneswar Sarker.jpg" alt="Judge 3">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Baneswar Sarker</h3>
-                        </div>
-
-                        <!-- Judge 4 -->
-                        <div class="judge">
-                            <img src="Arunoday Chaudhuri.jpeg" alt="Judge 4">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Arunoday Chaudhuri</h3>
-                        </div>
-
-                        <div class="judge">
-                            <img src="Anushko Mandal.jpg" alt="Judge 4">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Anushko Mandal</h3>
-                        </div>
-
-                        <div class="judge">
-                            <img src="Thirtharaj Sur.jpeg" alt="Judge 4">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Thirtharaj Sur</h3>
-                        </div>
-
-                        <h2>Band e thlon Judges</h2>
-                        <div class="judge">
-                            <img src="betj1.jpg" alt="Judge 3">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Arkapravo Ghosh</h3>
-                        </div>
-
-                         <div class="judge">
-                            <img src="betj2.jpg" alt="Judge 3">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Aman sethia</h3>
-                        </div>
-
-                        <div class="judge">
-                            <img src="bet3.JPG" alt="Judge 3">
-                            <h3 style="color: white; font-size: 1.5em; font-weight: bold; margin-top: 10px;">Joyee Mukherjee</h3>
-                        </div>
-
-                    </div>
-
-                    <!-- Add more slides for other judge panels -->
-
+            <!-- Judge 1 -->
+            <div class="slide">
+                <h2>Alaap (Final)</h2>
+                <div class="judge">
+                    <img src="alaapjudge1.jpg" alt="Judge 1">
+                    <h3>Kajal Sengupta</h3>
+                    <p>Sri Kajal Sengupta, an illustrious figure in the realm of music, proudly serves as the Honorary Secretary of "Sarbabharatiya Sangeet o Sanskriti Parishad."...</p>
                 </div>
+            </div>
 
-                <button class="slider-btn slider-btn-left" onclick="prevSlide()">❮</button>
-                <button class="slider-btn slider-btn-right" onclick="nextSlide()">❯</button>
+            <!-- Judge 2 -->
+            <div class="slide">
+                <h2>Alaap (Final)</h2>
+                <div class="judge">
+                    <img src="alaapjudge2.png" alt="Judge 2">
+                    <h3>Snigdhadeb Sengupta</h3>
+                    <p>Snigdhadeb has learnt Hindustani Classical and Semiclassical music for 18 years from Debi Ranjan Bandyopadhyay and later also from Anjan Majumdar...</p>
+                </div>
+            </div>
+
+            <!-- Judge 3 -->
+            <div class="slide">
+                <h2>Thru da Lens Judge</h2>
+                <div class="judge">
+                    <img src="judgetdl.png" alt="Judge 3">
+                    <h3>Dipanjan Pal</h3>
+                    <p>A multiple international award winning photographer</p>
+                </div>
+            </div>
+
+            <!-- Judge 4 -->
+            <div class="slide">
+                <h2>Alaap (Prelims)</h2>
+                <div class="judge">
+                    <img src="monali.jpg" alt="Judge 4">
+                    <h3>Monali Mitra Paladhi</h3>
+                    <p>Monali Mitra Paladhi was born into a musical family and commenced her singing journey under the guidance of her father, Late Sri Manick Chandra Paladhi...</p>
+                </div>
+            </div>
+
+            <!-- Judge 5 -->
+            <div class="slide">
+                <h2>Alaap (Prelims)</h2>
+                <div class="judge">
+                    <img src="sb.jpg" alt="Judge 5">
+                    <h3>Surankan Bhowmick</h3>
+                    <p>Champion of Eto Sur aar Eto Gan , presented by DD Bangla 2013 , Participant of Zee Bangla Sa Re Ga Ma Pa 2015 , State Music Academy Champion for Nazrul geeti and...</p>
+                </div>
+            </div>
+
+            <!-- Judge 6 -->
+            <div class="slide">
+                <h2>Alaap (Prelims)</h2>
+                <div class="judge">
+                    <img src="supriya.jpg" alt="Judge 6">
+                    <h3>Supriya Das Bala</h3>
+                    <p>Known face in Social Media and Televisions. Expert percussionist and teacher as well, has worked professionally with famous artists in popular TV shows.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Prahelika Quiz Masters</h2>
+
+            <!-- Judge 7 -->
+            <div class="slide">
+                <div class="judge">
+                    <img src="Baneswar Sarker.jpg" alt="Judge 7">
+                    <h3>Baneswar Sarker</h3>
+                </div>
+            </div>
+
+            <!-- Judge 8 -->
+            <div class="slide">
+                <div class="judge">
+                    <img src="Arunoday Chaudhuri.jpeg" alt="Judge 8">
+                    <h3>Arunoday Chaudhuri</h3>
+                </div>
+            </div>
+
+            <!-- Judge 9 -->
+            <div class="slide">
+                <div class="judge">
+                    <img src="Anushko Mandal.jpg" alt="Judge 9">
+                    <h3>Anushko Mandal</h3>
+                </div>
+            </div>
+
+            <!-- Judge 10 -->
+            <div class="slide">
+                <div class="judge">
+                    <img src="Thirtharaj Sur.jpeg" alt="Judge 10">
+                    <h3>Thirtharaj Sur</h3>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Band e thlon Judges</h2>
+
+            <!-- Judge 11 -->
+            <div class="slide">
+                <div class="judge">
+                    <img src="betj1.jpg" alt="Judge 11">
+                    <h3>Arkapravo Ghosh</h3>
+                </div>
+            </div>
+
+            <!-- Judge 12 -->
+            <div class="slide">
+                <div class="judge">
+                    <img src="betj2.jpg" alt="Judge 12">
+                    <h3>Aman Sethia</h3>
+                </div>
+            </div>
+
+            <!-- Judge 13 -->
+            <div class="slide">
+                <div class="judge">
+                    <img src="bet3.JPG" alt="Judge 13">
+                    <h3>Joyee Mukherjee</h3>
+                </div>
             </div>
         </section>
     </main>
@@ -313,49 +266,8 @@ Known face on social media.</p>
     </div>
 
     <script>
-        let currentIndex = 0;
-        let intervalId;
         const audio = document.getElementById('background-audio');
         const audioStatus = document.getElementById('audio-status');
-
-        function showSlide(index) {
-            const slider = document.querySelector('.slider');
-            const slides = document.querySelectorAll('.slide');
-            const maxHeight = Math.max(...Array.from(slides[index].children).map(child => child.offsetHeight));
-
-            currentIndex = index;
-            slider.style.transform = `translateY(-${maxHeight * currentIndex}px)`;
-        }
-
-        function nextSlide() {
-            const slides = document.querySelectorAll('.slide');
-            currentIndex = (currentIndex + 1) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        function prevSlide() {
-            const slides = document.querySelectorAll('.slide');
-            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        function startAutoSlide() {
-            intervalId = setInterval(() => {
-                nextSlide();
-            }, 90000); // Change the interval as needed (in milliseconds)
-        }
-
-        function stopAutoSlide() {
-            clearInterval(intervalId);
-        }
-
-        // Start the auto slide on page load
-        startAutoSlide();
-
-        // Stop the auto slide when the user interacts with manual controls
-        document.querySelectorAll('.slider-btn').forEach(btn => {
-            btn.addEventListener('click', stopAutoSlide);
-        });
 
         // Toggle audio playback
         function toggleAudio() {
